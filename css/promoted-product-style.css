@@ -1,0 +1,16 @@
+/* wppromotedproduct/css/promoted-product-style.css */
+
+.promoted-product {
+	background-color: #f7f7f7;
+	color: #000000; /* Default text color, you can replace it with the option value */
+	padding: 10px;
+	text-align: center;
+}
+
+.promoted-title {
+	font-weight: bold;
+}
+
+.product-title {
+	margin-left: 10px;
+}

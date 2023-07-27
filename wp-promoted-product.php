@@ -42,14 +42,14 @@ class WP_Promoted_Product {
 			$default_text_color = '#000000';
 			add_option( 'promoted_product_text_color', $default_text_color );
 
-			// Create custom database tables (if needed).
 			global $wpdb;
-			$table_name = $wpdb->prefix . 'my_custom_table';
+			$table_name = $wpdb->prefix . 'wp_promotions';
 			$sql = "CREATE TABLE $table_name (
-					id INT NOT NULL AUTO_INCREMENT,
-					name VARCHAR(100) NOT NULL,
-					PRIMARY KEY (id)
+				id INT NOT NULL AUTO_INCREMENT,
+				name VARCHAR(100) NOT NULL,
+				PRIMARY KEY (id)
 			)";
+			
 			require_once ABSPATH . 'wp-admin/includes/upgrade.php';
 			dbDelta( $sql );
 	}
