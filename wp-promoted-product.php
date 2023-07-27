@@ -49,7 +49,7 @@ class WP_Promoted_Product {
 				name VARCHAR(100) NOT NULL,
 				PRIMARY KEY (id)
 			)";
-			
+
 			require_once ABSPATH . 'wp-admin/includes/upgrade.php';
 			dbDelta( $sql );
 	}
